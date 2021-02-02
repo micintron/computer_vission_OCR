@@ -1,0 +1,92 @@
+@import "./src/Variables";
+
+.pdf-ocr-page-container {
+    
+
+    .pdf-file-input-container {
+        width: 60vw;
+        top: 15vh;
+        margin: 0 auto;
+        position: relative;
+
+        &.hide {
+            display: none;
+        }
+
+        .pdf-loading-overlay-container {
+
+            &.hide {
+                display: none;
+            }
+        }
+    }
+
+    .file-output-state-container {
+        
+        padding: 0px 50px;
+        padding-top: 40px;
+
+        &.hide {
+            display: none;
+        }
+
+        button {
+            background-color: white; 
+            border: 1px solid rgba(black, 0.2);
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: $medium;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: rgba(white, 0.8);
+            }
+        }
+
+        .file-output-state-content-container {
+            
+            padding-top: 20px;
+
+            .ocr-image-container {
+                display: flex;
+                padding-bottom: 20px;
+                align-items: flex-start;
+
+                .ocr-image-wrapper {
+                    flex: 1;
+                    border-radius: 3px;
+                    overflow: hidden;
+
+                    .ocr-image {
+                        
+                        width: 100%;
+                    }
+                }
+
+                .ocr-text-container {
+                    flex: 1;
+                    margin-left: 30px;
+                    font-size: 16px;
+                    white-space: pre;
+                    line-height: 27px;
+                    border-radius: 3px;
+                    color: black;
+                    padding: 20px;
+                    font-weight: $medium;
+                    max-width: 50%;
+                    padding-top: 0px;
+                    b {
+                        font-size: 20px;
+                        font-weight: $bold;
+                    }
+                }
+            }
+        } 
+    }
+}

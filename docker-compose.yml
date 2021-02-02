@@ -1,0 +1,17 @@
+version: '3'
+services:
+    web:
+        build: ./Prod_CV_NLP_API/flask
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./Prod_CV_NLP_API/flask:/flask
+
+    react:
+        build: ./Prod_ocr-react-app
+        command: npm start
+        ports:
+            - "3000:3000"
+        stdin_open: true
+
+        

@@ -1,0 +1,54 @@
+@import "./src/Variables";
+
+.text-analysis-page-container {
+    padding: 30px;
+
+    .text-analysis-page-content-container {
+        display: flex;
+
+        .text-input-container {
+            position: relative;
+            flex: 1;
+            margin-right: 30px;
+            height: 93vh;  
+
+            .text-input {
+                resize: none;
+                font-size: 14px;
+                padding: 40px;
+                box-sizing: border-box;
+                outline: none;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(black, 0.2);
+                overflow-y: auto;
+            }
+
+            button {
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                background-color: $highlight; 
+                border: 1px solid rgba(black, 0.2);
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                border-radius: 3px;
+                cursor: pointer;
+                font-weight: $semiBold;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: rgba($highlight, 0.8);
+                }
+            }
+        }
+
+        .text-output-container {
+            flex: 1;
+        }
+    }
+}

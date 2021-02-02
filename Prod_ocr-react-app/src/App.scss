@@ -1,0 +1,70 @@
+@import 'Variables';
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif !important;
+    font-weight: $regular;
+    font-size: 10px;
+    background-color: $bgColor;
+    color: $primaryTextColor;
+}
+
+img {
+    display: block;
+}
+
+div[hidden] {
+  display: none !important;
+}
+
+button[hidden] {
+  display: none !important;
+}
+
+img[hidden] {
+  display: none !important;
+}
+
+textarea[hidden] {
+  display: none !important;
+}
+
+input[hidden] {
+  display: none !important;
+}
+
+a[hidden] {
+  display: none !important;
+}
+
+textarea {
+    font-family: inherit !important;
+}
+
+h1 {
+    display: block;
+    font-size: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: $regular;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    margin-left: $sidebarWidth;
+    //margin-top: $headerHeight;
+}

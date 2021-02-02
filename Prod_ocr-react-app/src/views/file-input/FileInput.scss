@@ -1,0 +1,77 @@
+@import "./src/Variables";
+
+.file-input-state-container {
+    position: relative;
+
+    .file-input-state-content-container {
+        position: relative;
+        background: white;
+        border: 6px dashed rgba(black, 0.4);
+        width: 100%;
+        height: 60vh;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        cursor: pointer;
+        box-sizing: border-box;
+        &.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        &.dragging {
+
+            .upload-logo {
+                transform: translateY(-20px) scale(1.2);
+            }
+
+            .upload-instructions {
+                transform: translateY(20px) scale(1.2);
+            }
+        }
+
+        .upload-logo {
+            padding-bottom: 30px;
+            opacity: 0.5;
+            pointer-events: none;
+            transition: transform 0.1s;
+        }
+
+        .upload-instructions {
+            font-size: 20px;
+            font-weight: $bold;
+            pointer-events: none;
+            transition: transform 0.1s;
+            color: rgba(black, 0.5);
+            text-align: center;
+        }
+    }
+
+    .loading-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+
+        &.hide {
+            display: none;
+        }
+    }
+}
