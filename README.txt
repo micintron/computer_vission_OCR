@@ -1,8 +1,8 @@
 Document and Materials AI/ML Computer Vision Processor - NLP Extension
 
-This project will be an Extension of the original CI challenge for Computer vision and OPEN CV. Our new objectives are to gather data from new form of id - Drivers license, summarize - text extracted with BERT and OpenCV, classify text being extracted - using basic classification like Sentiment Analysis, update old angular UI in with a brand new react UI, create auto documentation with Sphinx and show template with Sphinx that can be used for any project for easy integration.
+This project will be for Computer vision and OPEN CV. Our new objectives are to gather data from new form of id - Drivers license, summarize - text extracted with BERT and OpenCV, classify text being extracted - using basic classification like Sentiment Analysis, update old angular UI in with a brand new react UI, create auto documentation with Sphinx and show template with Sphinx that can be used for any project for easy integration.
 
-Business Value	
+Project Value	
 
 - Further enhanced Automated documentation processing from images
 
@@ -34,49 +34,3 @@ Side Note:
 The drivers_license endpoint may take a few moments running locally but host on a production server with GPU access this will run in less than a second.
 
 Use files in test data to test application
-
-
-
-Full Team
-
-Suvarna, Satyanarayana (CTR)
-Team Organizer
-
-Cintron, Matthew I 
-AI ML / Backend Implementation Lead
-
-Das, Avishek 
-AI ML Dev / DL data extraction
-
-Tulluru, Laxmisudha 
-AI ML Dev / DL data extraction
-
-Watts, Robert W 
-AI ML research- DL data extraction
-
-
-Valle, Troy T 
-Full Stack UI Lead
-
-Dunlap, Thomas A 
-AI ML / backend Implementation / NLP
-
-Cirtain, Melissa J 
-AI ML Research /  NLP
-
-Godbehere, Andrew B
-AI ML Dev / Sphinx Documentation
-
-Omar, Mohammed A
-AI ML Testing / Documentation/ Research
-
-Niziorski, Piotr W
-Endpoint Research 
-
-
-
-
-
-
-
-
